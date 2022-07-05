@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import {BrowserRouter as Router,Route, Routes} from 'react-router-dom'
-import FeedbackData from "./data/FeedbackData"
 import Header from "./components/Header";
 import FeedbackList from "./components/FeedbackList";
 import './index.css'
@@ -12,7 +10,7 @@ import {FeedbackProvider} from "./components/context/FeedbackContext"
 
 
 function App(){
-      
+
     return (
     <FeedbackProvider>
         <Router>
