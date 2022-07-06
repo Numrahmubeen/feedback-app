@@ -30,15 +30,18 @@ export const FeedbackProvider = ({children}) =>{
 
     let [isLoading,setIsLoading] = useState(true)
 
-    useEffect(()=>{
-      fetchFeedback() },[isLoading])
+  
 
-    const fetchFeedback = async () =>{
+    const fetchFeedback = async() =>{
       const response = await fetch('http://localhost:5000/feedback?_sort=id&_order=desc')
       const data = await response.json();
       setFeedbacks(data)
       setIsLoading(false)
     }
+    useEffect(()=>{
+      fetchFeedback() }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      ,[])
 
     const addFeedback = async (newFeedback)=>{
       setIsLoading = true
