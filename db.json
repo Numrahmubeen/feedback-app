@@ -1,0 +1,24 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 8,
+      "text": "My first Feedback"
+    },
+    {
+      "id": 2,
+      "rating": 3,
+      "text": "My second Feedback"
+    },
+    {
+      "id": 3,
+      "rating": 9,
+      "text": "My third Feedback"
+    },
+    {
+      "id": 4,
+      "rating": 4,
+      "text": "I am updated in db"
+    }
+  ]
+}

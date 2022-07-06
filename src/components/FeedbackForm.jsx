@@ -2,8 +2,7 @@ import Card from "./shared/Card"
 import { useState,useContext,useEffect } from "react"
 import Button from "./shared/Button"
 import RatingSelect from "./RatingSelect"
-import {v4 as v4uuid } from 'uuid'
-import FeedbackContext from "./context/FeedbackContext"
+import FeedbackContext from "../context/FeedbackContext"
 
 
 function FeedbackForm() {
@@ -52,7 +51,6 @@ function FeedbackForm() {
       }
       else{
         const newFeedback = {
-          id:v4uuid(),
           rating,
           text
         }

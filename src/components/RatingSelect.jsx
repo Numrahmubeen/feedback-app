@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import {useEffect,useContext} from 'react'
-import FeedbackContext from './context/FeedbackContext'
+import FeedbackContext from '../context/FeedbackContext'
 
 function RatingSelect({select}) {
     const [selected,setSelected] = useState(10)

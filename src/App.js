@@ -6,7 +6,7 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import About from "./pages/About";
 import AboutIconLink from "./components/AboutIconLink";
-import {FeedbackProvider} from "./components/context/FeedbackContext"
+import {FeedbackProvider} from "./context/FeedbackContext"
 
 
 function App(){
